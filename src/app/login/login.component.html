@@ -1,0 +1,25 @@
+<div class="login">
+    
+
+    <img src="assets/img/outline-status-heart-plus@2x.png" class="login-img">
+
+    <div class="credentials">
+        <h1 class="welcome"w>Welcome!</h1>
+        <p class="credentials-username">Email</p>
+        <input type="text" class="credentials-username-input" (keyup.enter)="onClick()" [(ngModel)] = "email">
+        <p class="credentials-password">Password</p>
+        <input type="password" (keyup.enter)="onClick()" [ngClass]="{'credentials-password-input':true, 'shake':shakeIt}" [(ngModel)] = "password">
+        <div [ngClass]="{'incorrect-password': true, 'incorrect-password-hidden':incorrectPassword, 'shake':shakeIt}">Incorrect Password!</div>
+    </div>
+    <div></div>
+
+    <button class="login-page-buttons" #login (click)="onClick()">
+        Login
+    </button>
+
+
+    <div></div>
+    <a href="/forgetPassword" class="login-forgot-password">Forgot Password?</a>
+</div>
+
+<button href=""  (click) = "createAccountClick()" class="login-page-buttons" id="create-account">Create Account</button>
