@@ -1,7 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 //import { AuthService } from 'src/services/auth.service';
-import { AuthService } from 'src/services/auth.service';
+import { AuthService } from 'src/app/services/auth.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
 
   @ViewChild('login') login! :ElementRef;
   constructor(private authService: AuthService, private router: Router, ) { }
-  email: string = '';
+  email: any = '';
   password: string = '';
   shakeIt = false;
   shakeEmail = false;
@@ -46,7 +46,7 @@ export class LoginComponent implements OnInit {
             //go to new component
             console.log("hello")
             
-            this.router.navigateByUrl('admin')
+            this.router.navigateByUrl('home', {state: {email: this.email, test: 'test'} })
             
             
           }

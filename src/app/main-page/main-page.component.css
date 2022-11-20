@@ -1,0 +1,132 @@
+h1 {
+    margin-bottom: 0px;
+    font-family: var(--ff-primary);
+    font-size:  2.5em;
+    padding-top: 1em;
+}
+
+.container {
+    padding-bottom: 2em;
+    margin: 0 auto;
+    display: grid;
+    width: 100%;
+    grid-template-columns: minmax(80%, 80%);
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+}
+.tables {
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    font-family: var(--ff-primary);
+}
+
+#patients-header {
+    text-align: left;
+}
+
+#patients {
+    text-align: left;
+    padding-left: 3em;
+}
+
+#phone-header {
+    text-align: right;
+
+}
+
+#skills-header {
+    text-align: left;
+    padding-left: 3.5em;
+}
+
+#skills {
+    text-align: left;
+}
+
+.mat-row .mat-cell {
+    font-size: 0.8em;
+    color: black;
+    text-align: center;
+    border-bottom: 1px solid #CDCDCD;
+    border-top: 1px solid transparent;
+    cursor: pointer;
+}
+#name {
+    color: black;
+    text-align: left;
+}
+
+#phone {
+    text-align: right;
+}
+
+.mat-row:hover .mat-cell {
+    background-color: #CDCDCD;  
+}
+
+.demo-row-is-clicked {
+    background-color: #D9D9D9;
+}
+
+
+.mat-header-cell {
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+
+th {
+    background-color: var(--background-color);
+}
+
+mat-paginator {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.search {
+    justify-self: left;
+    width: 15em;
+    color: black;
+    font-family: var(--ff-primary);
+    
+}
+
+::ng-deep .mat-form-field-wrapper {
+    margin-bottom: -1em;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: white !important;
+}
+
+::ng-deep .search .mat-form-field-underline {
+    background-color: black;
+}
+
+::ng-deep .search .mat-form-field-ripple {
+    background-color: black !important;
+}
+
+::ng-deep.mat-form-field-underline {
+/*change color of underline*/
+background-color: white;
+} 
+
+::ng-deep.mat-form-field-ripple {
+/*change color of underline when focused*/
+background-color: white !important;
+}
+
+mat-label {
+    color: black;
+}
+
+input::placeholder {
+    color: grey;
+}

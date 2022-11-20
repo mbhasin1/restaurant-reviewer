@@ -1,0 +1,53 @@
+
+<p> Average Taste: {{avg_taste}} </p>
+<p> Average Atmosphere: {{avg_atmosphere}} </p>
+
+<p> Average Price: {{avg_price}}</p>
+<p> Average Planet: {{avg_planet}} </p>
+
+<div class="container">
+    <h1>
+        Add Review (Rate 1-10)
+    </h1>
+    <div></div>
+    <div>
+        <p id="first-name" class="add-nurse-text">Taste</p>
+        <input type="text" id="first-name-input" class="add-nurse-input" [(ngModel)] = "Taste">
+    </div>
+
+    <div class="grid-col-2">
+        <p id="last-name" class="add-nurse-text">Atmosphere</p>
+        <input type="text" id="last-name-input" class="add-nurse-input" [(ngModel)] = "Atmosphere">
+    </div>
+
+    <div>
+        <p id="email" class="add-nurse-text">Price</p>
+        <input type="text" id="email-input"  class="add-nurse-input" [(ngModel)] = "Price">
+    </div>
+
+    <div class=" grid-col-2">
+        <p id="phone" class="add-nurse-text">Planet/Sustainability</p>
+        <input type="text" id="phone-input" class="add-nurse-input" [(ngModel)] = "Planet">
+    </div>
+
+    <div class="skill-description">
+
+        <p id="skills" class="add-nurse-text">Additional Comments</p>
+        <textarea id="skills-input" class="add-nurse-input" [(ngModel)] = "comments"></textarea>
+    </div>
+
+    <div></div>
+
+    <div class="add-nurse-button">
+        <button (click)="cancel()" class = "cancelbutton">
+            Cancel
+        </button>
+        <div></div>
+        <button (click)="addReview()" class = "addbutton">
+            Add Review
+        </button>
+    </div>
+    
+    
+
+</div>
